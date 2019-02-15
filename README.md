@@ -29,7 +29,7 @@ If you discover a bug or would like to make a suggestion, email me at sheila.je@
 
 ## Technologies Used
 
-React, Webpack.
+React, Webpack, Material -UI.
 
 ### License
 

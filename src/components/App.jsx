@@ -5,8 +5,8 @@ import LandingPage from './landingPage/LandingPage'
 import AboutMe from './aboutme/AboutMe'
 import Resume from './resume/Resume'
 import Projects from './projects/Projects'
-import contactme from './contactme/ContactMe'
-import ContactMe from './contactme/ContactMe';
+import ContactMe from './contactme/ContactMe'
+
 
 function App() {
   return (
