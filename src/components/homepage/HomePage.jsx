@@ -34,10 +34,10 @@ function HomePage(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             Portfolio
           </Typography>
-          <Button color="inherit" >About Me</Button>
-          <Button color="inherit">Resume</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Contact Me</Button>
+          <Button color="inherit" component={Link} to='/aboutme'>About Me</Button>
+          <Button color="inherit" component={Link} to='/resume'>Resume</Button>
+          <Button color="inherit" component={Link} to='/projects'>Projects</Button>
+          <Button color="inherit" component={Link} to='/contactme'>Contact Me</Button>
         </Toolbar>
       </AppBar>
     </div>
