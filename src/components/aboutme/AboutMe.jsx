@@ -20,7 +20,7 @@ const pStyles = {
   fontStretch: 'normal',
   fontSize: '27px',
   marginRight: '500px',
-   marginLeft: '500px',
+   marginLeft: '1020px',
    width: '500px',
     textAlign: 'center'
 }
