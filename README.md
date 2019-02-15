@@ -8,6 +8,10 @@
 
 This is a personal portfolio site of my work that shows off my coding projects, education, work experience, and my technical/personal interests.
 
+## Comopnent Structure
+
+<img src="src/components/assets/images/Component-structure.jpeg" width="350" title="Component Structure">
+
 ## Setup/Installation Requirements
 
 * Clone this project with `git clone https://github.com/sheilaje/portfolioInReact`
