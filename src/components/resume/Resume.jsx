@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid'
 
 const styles = theme => ({
   root: {
@@ -16,30 +16,32 @@ const styles = theme => ({
 })
 
 const gridStyles = {
-  marginTop: "50px"
+  marginTop: '50px',
+  backgroundColor: 'tomato'
 }
 
 const individualGridStyles ={
   // border: '2px solid black'
+  
 }
 
 const pStyles = {
- fontFamily: 'Georgia',
+  fontFamily: 'Georgia',
   lineHeight: '1.4',
   fontWeight: 'normal',
   fontStretch: 'normal',
-  fontSize: '27px'
+  fontSize: '27px',
 }
 
 
 function Resume(props) {
-  const { classes } = props;
+  const { classes } = props
 
   return (
     <div className={classes.root}>
       <Grid container spacing={24} style={gridStyles}>
         <Grid item xs={12} style={individualGridStyles}>
-          <Paper className={classes.paper}> <h1>Objective</h1><p style={pStyles}>To obtain a technically challenging Software Engineer position where I can contribute, learn and grow my software development and problem-solving skills</p></Paper>
+          <Paper className={classes.paper}> <h1>Objective</h1><p style={pStyles}>Motivated junior developer transitioning from a career in Teaching. Excited to apply my people and technical skills to solving technical problems for organizations and collaborating with team mates.</p></Paper>
         </Grid>
         <Grid item xs={6} style={individualGridStyles}>
           <Paper className={classes.paper}>

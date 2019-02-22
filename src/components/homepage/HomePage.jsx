@@ -10,18 +10,21 @@ import IconButton from '@material-ui/core/IconButton'
 import { Link } from 'react-router-dom'
 
 const AppBarStyles = {
-  height: '100px'
+  height: '200px'
 }
 
 const buttonStyles = {
   fontSize: '20px',
-  paddingTop: '30px'
+  paddingTop: '40px',
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: 'space-between'
 }
 
 const toolbarStyles = {
-  display: 'flex',
-  alignItems: 'stretch',
-  justifyContent: 'space-around'
+  // display: 'flex',
+  // alignItems: 'stretch',
+  // justifyContent: 'space-around'
 }
 
 const styles = {
@@ -35,10 +38,10 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
-};
+}
 
 function HomePage(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <div className={classes.root}>
     
