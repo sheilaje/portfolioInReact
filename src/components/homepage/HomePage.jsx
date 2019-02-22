@@ -9,6 +9,21 @@ import IconButton from '@material-ui/core/IconButton'
 // import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 
+const AppBarStyles = {
+  height: '100px'
+}
+
+const buttonStyles = {
+  fontSize: '20px',
+  paddingTop: '30px'
+}
+
+const toolbarStyles = {
+  display: 'flex',
+  alignItems: 'stretch',
+  justifyContent: 'space-around'
+}
+
 const styles = {
   root: {
     flexGrow: 1,
@@ -27,18 +42,18 @@ function HomePage(props) {
   return (
     <div className={classes.root}>
     
-      <AppBar position="static" >
-        <Toolbar>
+      <AppBar position="static" style = {AppBarStyles} >
+        <Toolbar style= {toolbarStyles}>
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             {/* <MenuIcon /> */}
           </IconButton>
-          <Typography variant="h6" color="inherit" className={classes.grow} component={Link} to='/'>
-            Portfolio
+          <Typography style ={buttonStyles} variant="h6" color="inherit" className={classes.grow} component={Link} to='/'>
+            Home
           </Typography>
-          <Button color="inherit" component={Link} to='/aboutme'>About Me</Button>
-          <Button color="inherit" component={Link} to='/resume'>Resume</Button>
-          <Button color="inherit" component={Link} to='/projects'>Projects</Button>
-          <Button color="inherit" component={Link} to='/contactme'>Contact Me</Button>
+          <Button style ={buttonStyles} color="inherit" component={Link} to='/aboutme'>About Me</Button>
+          <Button style ={buttonStyles} color="inherit" component={Link} to='/resume'>Resume</Button>
+          <Button style ={buttonStyles} color="inherit" component={Link} to='/projects'>Projects</Button>
+          <Button style ={buttonStyles} color="inherit" component={Link} to='/contactme'>Contact Me</Button>
         </Toolbar>
       </AppBar>
     </div>
