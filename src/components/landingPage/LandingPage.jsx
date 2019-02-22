@@ -1,32 +1,59 @@
 import React from 'react'
+import Typing from 'react-typing-animation'
 
-function LandingPage()
-{   
+function TypingAnimation(){
+  const outerblock = {
+    padding: '0',
+    margin: '0',
+    listStyle: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+  const textBlock = {
+    padding: '5px',
+    width: '1000px',
+    height: '150px',
+    margin: '10px',
+    lineHeight: '150px',
+    fontWeight: 'bold',
+    fontSize: '3em',
+    textAlign: 'center'
+  }
+  const typingAnimationStyles = {
+    display: 'inline-block',
+    color: 'orange',
+    marginRight: '10px',
+    marginLeft: '10px',
+  }
+
   return(
-    <div class="ui grid">
-      <div class="four wide column">
-        <div class="ui vertical fluid tabular menu">
-          <a class="item">
-         Bio
-          </a>
-          <a class="item">
-        Pics
-          </a>
-          <a class="item active">
-        Companies
-          </a>
-          <a class="item">
-        Links
-          </a>
+    <div style={outerblock}>
+      <div style={textBlock}>
+      Hi, I'm Sheila Stephen. I'm a
+        <div style={typingAnimationStyles}>
+          <Typing loop = {true}>
+            <span> C#</span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> .NET</span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> Node.js</span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> Angular</span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> React </span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> HTML</span>
+            <Typing.Backspace count={20} delay={1000}/>
+            <span> CSS</span>
+            <Typing.Backspace count={20} delay={1000}/>
+          </Typing>
         </div>
-      </div>
-      <div class="twelve wide stretched column">
-        <div class="ui segment">
-      This is an stretched grid column. This segment will always match the tab height
-        </div>
+      Developer, with a great passion in coding.
       </div>
     </div>
+
   )
 }
 
-export default LandingPage
+export default TypingAnimation
