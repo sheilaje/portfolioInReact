@@ -8,8 +8,11 @@ function TypingAnimation(){
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
+    flexFlow: 'column',
+    flexGrow: '1',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignSelf: 'flex-start'
   }
   const textBlock = {
     paddingTop: '305px',
@@ -38,8 +41,8 @@ function TypingAnimation(){
   }
 
   return(
-    <div>
-      <div style={outerblock}>
+    <div style={outerblock}>
+      <div >
         <div style={textBlock}>
       Hi, I'm Sheila Stephen. I'm a
           <div style={typingAnimationStyles}>
@@ -63,9 +66,10 @@ function TypingAnimation(){
       Developer, with a great passion in coding.
         </div>
       </div>
+      
 
 
-      <div >
+      <div style ={{paddingTop: '100px', textAlign:'center'}}>
         <div >
           <p><a href="sheila.je@gmail.com" style={{fontSize: '40px'}}>sheila.je@gmail.com</a><br/></p>
           <div>
@@ -75,7 +79,6 @@ function TypingAnimation(){
           </div>
         </div>
       </div>
-
 
     </div>
   )
