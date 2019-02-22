@@ -1,3 +1,37 @@
+body {
+    background-color: lemonchiffon;
+}
+
 .picStyles {
     border-radius: 50%;
+    display: block;
+    border: 5px solid #48BBEC;
+    width: 500px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 150px;
+    /* position: static; */
+    /* float: center; */
+}
+
+.pStyles {
+    font-family: Roboto, sans-serif;
+    line-height: 1.4;
+    font-weight: normal;
+    font-stretch: 'normal';
+    font-size: 27px;
+    margin-right: 500px;
+    margin-left: 1020px;
+    width: 500px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: auto;
+}
+
+.h2Styles {
+    /* float: right; */
+    font-size: 35;
+    font-family: Roboto, sans-serif;
+    text-align: center;
 }
