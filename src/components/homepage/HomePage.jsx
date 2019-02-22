@@ -51,7 +51,7 @@ function HomePage(props) {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography style ={buttonStyles} variant="h6" color="inherit" className={classes.grow} component={Link} to='/'>
-            Home
+            HOME
           </Typography>
           <Button style ={buttonStyles} color="inherit" component={Link} to='/aboutme'>About Me</Button>
           <Button style ={buttonStyles} color="inherit" component={Link} to='/resume'>Resume</Button>

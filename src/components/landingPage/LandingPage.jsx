@@ -68,7 +68,6 @@ function TypingAnimation(){
       </div>
       
 
-
       <div style ={{paddingTop: '100px', textAlign:'center'}}>
         <div >
           <p><a href="sheila.je@gmail.com" style={{fontSize: '40px'}}>sheila.je@gmail.com</a><br/></p>

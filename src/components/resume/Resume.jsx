@@ -17,7 +17,7 @@ const styles = theme => ({
 
 const gridStyles = {
   marginTop: '50px',
-  backgroundColor: 'tomato'
+  // backgroundColor: 'tomato'
 }
 
 const individualGridStyles ={
