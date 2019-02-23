@@ -56,7 +56,7 @@ function HomePage(props) {
           <Button style ={buttonStyles} color="inherit" component={Link} to='/aboutme'>About Me</Button>
           <Button style ={buttonStyles} color="inherit" component={Link} to='/resume'>Resume</Button>
           <Button style ={buttonStyles} color="inherit" component={Link} to='/projects'>Projects</Button>
-          <Button style ={buttonStyles} color="inherit" component={Link} to='/contactme'>Contact Me</Button>
+          {/* <Button style ={buttonStyles} color="inherit" component={Link} to='/contactme'>Contact Me</Button> */}
         </Toolbar>
       </AppBar>
     </div>

@@ -8,19 +8,22 @@ function Projects()
       name:'Message Board',
       description: 'A forum like portal where users can interact by new posts and reply to other posts.',
       technologiesUsed: 'jQuery, JavaScript, HTML, CSS',
-      link: 'https://github.com/sheilaje/messageboard'
+      link: 'https://github.com/sheilaje/messageboard',
+      image: 'messageBoard'
     },
     {
       name: 'Restaurant Roulette',
       description: 'An app that helps in choosing a restaurent from an API based on teh users input of distance and price range',
       technologiesUsed: 'C#,.Net,Zomato API',
-      link: 'https://github.com/sheilaje/Restaurant-Roulette'
+      link: 'https://github.com/sheilaje/Restaurant-Roulette',
+      image: 'foodSavor'
     },
     {
       name: 'Food Savor',
       description: 'This is a web app that lets users search for recipes based on expiring ingredient in the pantry',
       technologiesUsed: 'Angular, Firebase, Firebase Authentication',
-      link: 'https://github.com/sheilaje/Food-Savor'
+      link: 'https://github.com/sheilaje/Food-Savor',
+      image: 'foodSavor'
     }
   ]
   return(

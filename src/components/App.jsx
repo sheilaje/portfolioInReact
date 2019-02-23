@@ -6,7 +6,7 @@ import AboutMe from './aboutme/AboutMe'
 import Resume from './resume/Resume'
 import Projects from './projects/Projects'
 import Project from './projects/Project'
-import ContactMe from './contactme/ContactMe'
+// import ContactMe from './contactme/ContactMe'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route exact path= '/resume' component={Resume}/>
         <Route exact path= '/projects' component={Projects}/>
         <Route exact path= '/project' component={Project}/>
-        <Route exact path= '/contactme' component={ContactMe}/>
+        {/* <Route exact path= '/contactme' component={ContactMe}/> */}
       </Switch>
     </div>
   )

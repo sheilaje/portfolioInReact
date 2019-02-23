@@ -17,11 +17,13 @@ const styles = theme => ({
 
 const gridStyles = {
   marginTop: '50px',
-  // backgroundColor: 'tomato'
+  backgroundColor: '#f4bb41'
+  
 }
 
 const individualGridStyles ={
   // border: '2px solid black'
+  // backgroundColor: '#f4bb41'
   
 }
 
