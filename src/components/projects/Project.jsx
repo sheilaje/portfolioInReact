@@ -2,48 +2,30 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
-// import foodSavor from '../assets/images/foodSavor.jpeg'
-// import messageBoard from '../assets/images/messageBoard.jpeg'
-// import {Card, Col, CardTitle} from 'react-materialize'
+
+const divStyles= {
+  // display: 'grid',
+  // gridTemplateColumns: '1fr 1fr 1fr',
+  // width: '405px',
+  // padding:'40px',
+  fontSize: '30px',
+  border: '1px solid #999',
+  padding: '0.5rem'
+}
 
 function Project({name, description, technologiesUsed, link, image}){
   return(
-    <div>
-      <h3>{name}</h3>
-      <p><strong>Description :</strong>{description}</p>
-      <p><strong>Technologies Used :</strong> {technologiesUsed} </p>
+    <div style={divStyles}>
+      <table>
+        <tr>
+          <td><h3>{name}:</h3></td>
+          <td><p>{description}</p></td>
+          <td><p>{technologiesUsed} </p></td>
       
-      <Button target="blank" href={link}>Open</Button>
+          <td><Button style={{backgroundColor:'green'}}target="blank" href={link}>Open</Button></td>
+        </tr>
+      </table>
     </div>
-
-
-    // <div class="col s12 m7">
-    //   <div class="card horizontal">
-    //     <div class="card-image">
-    //       <img src={foodSavor} />
-    //     </div>
-    //     <div class="card-stacked">
-    //       <div class="card-content">
-    //         <h3>{name}</h3>
-    //         <p><strong>Description :</strong>{description}</p>
-    //         <p><strong>Technologies Used :</strong> {technologiesUsed} </p>
-    //       </div>
-    //       <div class="card-action">
-    //         <a href={link}>open</a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
-    // <Col m={7} s={12}>
-    //   <Card horizontal header={<CardTitle image={image}></CardTitle>} actions={[<a href={link}>Open</a>]}>
-    //     <div class="card-content"> 
-    //       <h3>{name}</h3>
-    //       <p><strong>Description :</strong>{description}</p>
-    //       <p><strong>Technologies Used :</strong> {technologiesUsed} </p>
-    //     </div>
-    //   </Card>
-    // </Col>
   )
 }
 
