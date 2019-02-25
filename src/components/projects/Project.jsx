@@ -1,7 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Button'
+// import profilepic from '../assets/images/Sheila.jpeg'
+// import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
+import {Card, CardTitle} from 'react-materialize'
+import Projects from "./Projects"
+
+const cardTitleStyles = {
+  height: '10px',
+  width: '10px'
+}
 
 const divStyles= {
   // display: 'grid',
@@ -13,19 +21,16 @@ const divStyles= {
   padding: '0.5rem'
 }
 
-function Project({name, description, technologiesUsed, link, image}){
+function Project(props){
   return(
-    <div style={divStyles}>
-      <table>
-        <tr>
-          <td><h3>{name}:</h3></td>
-          <td><p>{description}</p></td>
-          <td><p>{technologiesUsed} </p></td>
-      
-          <td><Button style={{backgroundColor:'green'}}target="blank" href={link}>Open</Button></td>
-        </tr>
-      </table>
+    <div>
+      <Card horizontal header={<CardTitle image={props.image}></CardTitle>} 
+        actions={[<a href={props.link}>Github Link</a>]}>
+        <p>{props.description}</p>
+        <p>{props.technologiesUsed}</p>
+      </Card>
     </div>
+
   )
 }
 
@@ -33,7 +38,8 @@ Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technologiesUsed: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 }
 
 export default Project
