@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import {Card, CardTitle} from 'react-materialize'
 import Projects from "./Projects"
+import '../assets/styles/styles.css'
 
 const cardTitleStyles = {
   height: '10px',
@@ -25,9 +26,9 @@ function Project(props){
   return(
     <div>
       <Card horizontal header={<CardTitle image={props.image}></CardTitle>} 
-        actions={[<a href={props.link}>Github Link</a>]}>
-        <p>{props.description}</p>
-        <p>{props.technologiesUsed}</p>
+        actions={[<a className = 'pStyles' href={props.link}>Github Link</a>]}>
+        <p className = 'pStyles'>{props.description}</p>
+        <p className = 'pStyles'>{props.technologiesUsed}</p>
       </Card>
     </div>
 

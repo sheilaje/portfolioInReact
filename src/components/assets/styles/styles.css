@@ -15,6 +15,10 @@ body {
     /* float: center; */
 }
 
+img:hover {
+    opacity: 0.6;
+}
+
 .pStyles {
     font-family: Roboto, sans-serif;
     line-height: 1.4;
